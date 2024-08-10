@@ -110,34 +110,38 @@ const Header = () => {
               </div>
               <ShoppingCart />
             </SheetTrigger>
-            <SheetContent className="max-w-screen-sm sm:max-w-[800px]">
+            <SheetContent className="max-w-full lg:max-w-[1000px]">
               <div className="flex flex-col gap-2">
                 <span className="mr-4 text-lg font-semibold">Cart:</span>
-                <div className="flex items-center">
+                <div className="flex flex-col lg:flex-row lg:items-center">
                   <Input
                     value={coupon}
                     onChange={handleInputChange}
                     placeholder="Apply coupon"
-                    className="w-2/4 border border-gray-500"
+                    className="w-full border border-gray-500 lg:w-2/4"
                   />
-                  <Button className="ml-4" onClick={() => handleCheckCoupon()}>
+                  <Button
+                    className="mt-4 w-2/4 lg:ml-4 lg:mt-0 lg:w-auto"
+                    onClick={() => handleCheckCoupon()}
+                  >
                     Apply
                   </Button>
                 </div>
               </div>
-              <ul className="mt-8 flex max-h-[70%] flex-col gap-10 overflow-y-auto">
+              <ul className="mt-8 flex max-h-[50%] flex-col gap-10 overflow-y-auto lg:max-h-[70%]">
                 {cartItems.map((item, index) => (
-                  <li key={index} className="flex gap-2">
-                    <div className="h-36 w-36 rounded-lg">
+                  <li key={index} className="flex">
+                    <div className="h-24 w-2/5 rounded-lg lg:h-36 lg:w-36">
                       <img
                         className="h-full w-full rounded-lg"
                         src={item.image_url}
                         alt="item"
                       />
                     </div>
-                    <div className="flex flex-col">
+                    <div className="ml-2 flex flex-col">
                       <div className="text-lg font-semibold">{item.name}</div>
                       <div className="text-[#757575]">{item.type}</div>
+                      <div className="font-semibold">${item.price}</div>
                       <div className="mt-4 text-[#757575]">Qty: 1</div>
                       <div
                         className="mt-auto underline"
@@ -146,7 +150,9 @@ const Header = () => {
                         Remove
                       </div>
                     </div>
-                    <div className="ml-auto font-semibold">${item.price}</div>
+                    <div className="ml-auto hidden font-semibold lg:block">
+                      ${item.price}
+                    </div>
                   </li>
                 ))}
               </ul>

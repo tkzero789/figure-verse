@@ -31,7 +31,7 @@ export const Hit = ({ hit }) => {
               <Highlight attribute="type" hit={hit} />
             </div>
             <div className="hit-price">
-              <span>{getPropertyByPath(hit, "price")}</span>
+              <span>${getPropertyByPath(hit, "price")}</span>
             </div>
           </div>
         </div>

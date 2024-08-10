@@ -28,10 +28,12 @@ export const Search = () => {
         <SearchBox placeholder="Search..." className="mt-4" />
         <div className="mb-12 mt-10">
           <div className="mb-8 flex items-center justify-between">
-            <span className="text-lg font-semibold">List of products:</span>
+            <span className="hidden text-lg font-semibold lg:block">
+              List of products:
+            </span>
             <Recommend />
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2 lg:flex-row">
             <div>
               <span className="text-base font-semibold">Filter by type:</span>
               <RefinementList attribute="type" operator="or" />

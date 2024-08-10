@@ -12,10 +12,10 @@ import Question from "./Question";
 
 export default function Recommend() {
   return (
-    <div>
+    <div className="w-full lg:w-auto">
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-800">
+          <Button className="w-full bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-800">
             Assemble Your Discount
           </Button>
         </DialogTrigger>

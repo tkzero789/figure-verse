@@ -84,4 +84,14 @@
   .ais-InstantSearch .ais-Hits-list {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+
+  .ais-SearchBox {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ais-SearchBox {
+    width: 100%;
+  }
 }

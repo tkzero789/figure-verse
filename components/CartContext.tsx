@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState } from "react";
+import { toast } from "sonner";
 
 type CartItem = {
   name: string;
@@ -35,6 +36,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
   const addToCart = (item: CartItem) => {
     setCartItems((prevItems) => [...prevItems, item]);
+    toast("The figure has been added to your cart");
   };
 
   const removeFromCart = (name: string) => {
