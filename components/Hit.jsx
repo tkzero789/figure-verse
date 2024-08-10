@@ -40,7 +40,10 @@ export const Hit = ({ hit }) => {
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">{hit.name}</DialogTitle>
           <DialogDescription>
-            <span>{hit.type}</span>
+            <div>{hit.type}</div>
+            <div className="mt-2 text-base font-semibold text-black">
+              ${hit.price}
+            </div>
             <div className="mt-4 flex justify-center">
               <img className="w-[400px] rounded-md" src={hit.image_url} />
             </div>
