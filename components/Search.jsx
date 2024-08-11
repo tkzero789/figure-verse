@@ -35,7 +35,9 @@ export const Search = () => {
           </div>
           <div className="flex flex-col gap-2 lg:flex-row">
             <div>
-              <span className="text-base font-semibold">Filter by type:</span>
+              <div className="pb-2 text-base font-semibold">
+                Filter by type:
+              </div>
               <RefinementList attribute="type" operator="or" />
             </div>
             <div className="flex-grow">

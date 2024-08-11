@@ -138,13 +138,15 @@ const Header = () => {
                         alt="item"
                       />
                     </div>
-                    <div className="ml-2 flex flex-col">
+                    <div className="ml-2 flex flex-col lg:ml-6">
                       <div className="text-lg font-semibold">{item.name}</div>
                       <div className="text-[#757575]">{item.type}</div>
-                      <div className="font-semibold">${item.price}</div>
-                      <div className="mt-4 text-[#757575]">Qty: 1</div>
+                      <div className="block font-semibold lg:hidden">
+                        ${item.price}
+                      </div>
+                      <div className="text-[#757575]">Qty: 1</div>
                       <div
-                        className="mt-auto underline"
+                        className="mt-auto cursor-pointer underline"
                         onClick={() => handleRemove(item.name)}
                       >
                         Remove
