@@ -12,6 +12,7 @@ export default function Home() {
           <div
             style={{
               backgroundImage: `url(/img/marvel-bg.jpg)`,
+              backgroundPositionX: "center",
             }}
             className="relative aspect-square overflow-hidden rounded-lg bg-cover md:aspect-[2.4/1]"
           >
