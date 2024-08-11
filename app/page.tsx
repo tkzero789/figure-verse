@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Container>
       <div className="space-y-10 pb-10">
-        <div className="overflow-hidden rounded-lg p-4 sm:p-6 lg:p-8">
+        <div className="overflow-hidden rounded-lg py-4">
           <div
             style={{
               backgroundImage: `url(/img/marvel-bg.jpg)`,
@@ -25,7 +25,7 @@ export default function Home() {
                 </h2>
                 <Button
                   asChild
-                  className="mt-4 bg-gradient-to-r from-red-400 via-red-500 to-red-600 px-8 py-6 text-xl shadow-lg shadow-red-500/50 hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-red-300 dark:shadow-lg dark:shadow-red-800/80 dark:focus:ring-red-800"
+                  className="mt-4 bg-gradient-to-r from-red-500 to-red-600 px-8 py-6 text-xl shadow-lg shadow-red-500/50 hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-red-300 dark:shadow-lg dark:shadow-red-800/80 dark:focus:ring-red-800"
                 >
                   <Link
                     href="/shop"

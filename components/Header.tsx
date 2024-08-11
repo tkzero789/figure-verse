@@ -90,7 +90,7 @@ const Header = () => {
             </SheetContent>
           </Sheet>
           <Link href="/" className="ml-4 flex items-center gap-2 lg:ml-0">
-            <Image src={FigureVerse} alt="Logo" width={140} height={140} />
+            <Image src={FigureVerse} alt="Logo" width={190} height={190} />
           </Link>
         </div>
         <nav className="mx-6 flex hidden items-center space-x-4 md:block lg:space-x-6">
